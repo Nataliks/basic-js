@@ -14,7 +14,11 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function createDreamTeam(/* members */) {
-  throw new NotImplementedError('Not implemented');
+ // throw new NotImplementedError('Not implemented');
+ 
+  let result = this.Array.filter(item => typeof(item) == "string").map(item => item = item[0]).join("");
+ 
+
   // remove line with error and write your code here
 }
 
